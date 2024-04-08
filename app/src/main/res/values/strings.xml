@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AplicacionJunio</string>
+    <string name="login">Login</string>
+    <string name="appname">AppName</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="signup">¿No estás resgistrado? Haz click aquí</string>
+    <string name="credenciales">Recordar Credenciales</string>
+</resources>
