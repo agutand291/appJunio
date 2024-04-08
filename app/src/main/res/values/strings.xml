@@ -4,6 +4,7 @@
     <string name="appname">AppName</string>
     <string name="email">Email</string>
     <string name="password">Contraseña</string>
-    <string name="signup">¿No estás resgistrado? Haz click aquí</string>
+    <string name="signup">¿No estás registrado? Haz click aquí</string>
     <string name="credenciales">Recordar Credenciales</string>
+    <string name="user">Usuario</string>
 </resources>
