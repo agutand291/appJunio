@@ -7,4 +7,10 @@
     <string name="signup">¿No estás registrado? Haz click aquí</string>
     <string name="credenciales">Recordar Credenciales</string>
     <string name="user">Usuario</string>
+    <string name="registro">Registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="otro">Otro</string>
 </resources>
