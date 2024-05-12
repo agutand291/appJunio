@@ -49,8 +49,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="275dp"
+        android:layout_height="65dp"
         android:hint="@string/email"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,8 +68,8 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_width="275dp"
+        android:layout_height="65dp"
         android:layout_marginTop="22dp"
         android:hint="@string/password"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"

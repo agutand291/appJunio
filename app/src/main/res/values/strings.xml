@@ -13,4 +13,10 @@
     <string name="hombre">Hombre</string>
     <string name="mujer">Mujer</string>
     <string name="otro">Otro</string>
+    <string name="strength">Strength</string>
+    <string name="dexterity">Dexterity</string>
+    <string name="constitution">Constitution</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="wisdom">Wisdom</string>
+    <string name="charisma">Charisma</string>
 </resources>

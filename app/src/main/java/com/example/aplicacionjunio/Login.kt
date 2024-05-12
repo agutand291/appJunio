@@ -1,5 +1,6 @@
 package com.example.aplicacionjunio
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
@@ -30,10 +31,13 @@ class Login : AppCompatActivity() {
         passwordText = findViewById(R.id.passText)
         sendButton = findViewById(R.id.LoginButton)
         signUp = findViewById(R.id.signupText)
+        email = findViewById(R.id.email)
+        password = findViewById(R.id.password)
     }
 
     private fun initListeners() {
         sendButton.setOnClickListener { check() }
+        signUp.setOnClickListener { goSignup() }
     }
 
     private fun check() {
@@ -49,7 +53,17 @@ class Login : AppCompatActivity() {
             password.startAnimation(AnimationUtils.loadAnimation(this, R.anim.shake))
         }
         if(!isEmpty) {
-
+            goMain()
         }
+    }
+
+    private fun goMain() {
+        val intent = Intent(this, Main::class.java)
+        startActivity(intent)
+    }
+
+    private fun goSignup() {
+        val intent = Intent(this, Signup::class.java)
+        startActivity(intent)
     }
 }

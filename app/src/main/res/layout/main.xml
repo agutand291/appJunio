@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline4">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/charactersheets"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -75,14 +75,14 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/itemButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="Items" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/equipButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -94,14 +94,14 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/classButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Clases" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/raceButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -113,14 +113,14 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/spellsButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hechizos" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/abilitiesButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -132,14 +132,14 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/monstersButton"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="148dp"
                 android:layout_height="wrap_content"
                 android:text="Monstruos" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/guideButtons"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="143dp"
                 android:layout_height="wrap_content"
