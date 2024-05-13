@@ -30,8 +30,8 @@
         app:layout_constraintGuide_begin="600dp" />
 
     <LinearLayout
-        android:layout_width="330dp"
-        android:layout_height="75dp"
+        android:layout_width="341dp"
+        android:layout_height="109dp"
         android:baselineAligned="false"
         android:orientation="horizontal"
         android:weightSum="2"
@@ -44,8 +44,8 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/name"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_width="9dp"
+            android:layout_height="73dp"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:hint="@string/nombre"
@@ -57,15 +57,16 @@
             app:layout_constraintVertical_bias="0.25">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signupName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="50dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/apellidos"
-            android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:hint="@string/apellidos"
@@ -77,8 +78,9 @@
             app:layout_constraintVertical_bias="0.25">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signupSurname"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="50dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -86,15 +88,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="330dp"
-        android:layout_height="200dp"
+        android:layout_width="343dp"
+        android:layout_height="286dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline6"
-        app:layout_constraintVertical_bias="0.446">
+        app:layout_constraintVertical_bias="0.651">
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -112,6 +113,7 @@
             app:layout_constraintVertical_bias="0.25">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signupEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -132,6 +134,7 @@
             app:layout_constraintVertical_bias="0.25">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signupPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -151,6 +154,7 @@
             app:layout_constraintVertical_bias="0.25">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signupUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -196,7 +200,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/enviar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

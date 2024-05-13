@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -34,20 +35,20 @@
 
     <FrameLayout
         android:id="@+id/frameLayout2"
-        android:layout_width="213dp"
-        android:layout_height="295dp"
+        android:layout_width="200dp"
+        android:layout_height="400dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toStartOf="@+id/guideline17"
-        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintHorizontal_bias="0.844"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline16"
-        app:layout_constraintVertical_bias="0.255">
+        app:layout_constraintVertical_bias="0.346">
 
     </FrameLayout>
 
     <LinearLayout
-        android:layout_width="84dp"
-        android:layout_height="398dp"
+        android:layout_width="85dp"
+        android:layout_height="400dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/guideline18"
         app:layout_constraintEnd_toStartOf="@+id/guideline17"
@@ -60,90 +61,111 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/strength" />
+            android:text="@string/strength"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextNumber3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/dexterity" />
+            android:text="@string/dexterity"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextNumber4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/constitution" />
+            android:text="@string/constitution"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextNumber5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/intelligence" />
+            android:text="@string/intelligence"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextNumber6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/wisdom" />
+            android:text="@string/wisdom"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextNumber7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/charisma" />
+            android:text="@string/charisma"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/editTextNumber8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="323dp"
-        android:layout_height="64dp"
+        android:layout_width="313dp"
+        android:layout_height="65dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045">
-    </LinearLayout>
+        app:layout_constraintVertical_bias="0.045"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="313dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="423dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout2"></LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
