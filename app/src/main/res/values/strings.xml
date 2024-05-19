@@ -20,4 +20,5 @@
     <string name="wisdom">Wisdom</string>
     <string name="charisma">Charisma</string>
     <string name="enviar">Enviar</string>
+    <string name="nivel">Nivel</string>
 </resources>
