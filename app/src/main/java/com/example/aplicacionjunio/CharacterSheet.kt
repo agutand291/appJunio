@@ -1,12 +1,13 @@
 package com.example.aplicacionjunio
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-
-class CharacterSheet : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.charactersheet)
-    }
-
-}
+data class CharacterSheet(
+    val charisma: String = "",
+    val characterClass: String = "",
+    val constitution: String = "",
+    val dexterity: String = "",
+    val intelligence: String = "",
+    val name: String = "",
+    val race: String = "",
+    val strength: String = "",
+    val wisdom: String = ""
+)

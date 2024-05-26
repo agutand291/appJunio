@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">AplicacionJunio</string>
+    <string name="app_name">Roll Companion</string>
     <string name="login">Login</string>
-    <string name="appname">AppName</string>
+    <string name="appname">RollCompanion</string>
     <string name="email">Email</string>
     <string name="password">Contraseña</string>
     <string name="signup">¿No estás registrado? Haz click aquí</string>
@@ -13,12 +13,28 @@
     <string name="hombre">Hombre</string>
     <string name="mujer">Mujer</string>
     <string name="otro">Otro</string>
-    <string name="strength">Strength</string>
-    <string name="dexterity">Dexterity</string>
-    <string name="constitution">Constitution</string>
-    <string name="intelligence">Intelligence</string>
-    <string name="wisdom">Wisdom</string>
-    <string name="charisma">Charisma</string>
+    <string name="strength">Fuerza</string>
+    <string name="dexterity">Destreza</string>
+    <string name="constitution">Constitucion</string>
+    <string name="intelligence">Intelligencia</string>
+    <string name="wisdom">Sabiduria</string>
+    <string name="charisma">Carisma</string>
     <string name="enviar">Enviar</string>
     <string name="nivel">Nivel</string>
+    <string name="repetir_contrase_a">Repetir Contraseña</string>
+    <string name="a_adir_correo">Añadir Correo</string>
+    <string name="items">Items</string>
+    <string name="equipamiento">Equipamiento</string>
+    <string name="clases">Clases</string>
+    <string name="razas">Razas</string>
+    <string name="hechizos">Hechizos</string>
+    <string name="abilidades">Abilidades</string>
+    <string name="monstruos">Monstruos</string>
+    <string name="manuales">Manuales</string>
+    <string name="crea_tu_personaje">Crea tu personaje</string>
+    <string name="clase">Clase</string>
+    <string name="raza">Raza</string>
+    <string name="atributos">Atributos</string>
+    <string name="guardar_personaje">Guardar Personaje</string>
+    <string name="buscar_personajes">Buscar Personajes</string>
 </resources>
