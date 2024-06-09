@@ -59,9 +59,7 @@ class SignUp : AppCompatActivity() {
             return if (field.text.toString().isBlank()) {
                 field.startAnimation(AnimationUtils.loadAnimation(this, R.anim.shake))
                 false
-            } else {
-                true
-            }
+            } else true
         }
 
         isValid = validateField(name) && isValid

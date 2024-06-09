@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="fab1_background_color">#880C0C</color>
+    <color name="fab1_icon_color">#FFFFFF</color>
+    <color name="fab2_icon_color">#000000</color>
 </resources>

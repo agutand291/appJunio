@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Apariencia">
+    <SwitchPreferenceCompat
+        android:key="darkmode_switch"
+        android:title="Modo Oscuro"
+        android:summary="@string/act_dark_mode"
+        android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Cuenta">
+        <EditTextPreference
+            android:key="change_username"
+            android:title="Cambiar Nombre"
+            android:summary="@string/act_name"
+            android:defaultValue="" />
+        <EditTextPreference
+            android:key="change_email"
+            android:title="Cambiar Correo"
+            android:summary="@string/act_email"/>
+        <EditTextPreference
+            android:key="change_password"
+            android:title="Cambiar Contraseña"
+            android:summary="@string/act_pass"/>
+        <Preference
+            android:key="logout_button"
+            android:title="Logout"
+            android:summary="@string/desconectar_la_cuenta"/>
+        <Preference
+            android:key="rating"
+            android:title="Evaluacion"
+            android:summary="Evalua la aplicación"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    style="@style/parchment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineTop"
@@ -100,6 +101,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:onClick="onBackClicked"
         android:importantForAccessibility="no"
-        android:focusable="true" />
+        android:focusable="true"
+        app:backgroundTint="@color/fab1_background_color"
+        app:tint="@color/fab1_icon_color"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/avd_die_spin"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/avd_die_spin"
+        android:roundIcon="@drawable/logo_icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AplicacionJunio"
         tools:targetApi="31">
@@ -26,8 +26,10 @@
         <activity android:name=".Main" android:exported="true"/>
         <activity android:name=".Settings" android:exported="true"/>
         <activity android:name=".CreateCharacter" android:exported="true"/>
-        <activity android:name=".CharacterListActivity" android:exported="true" />
-        <activity android:name=".CharacterDetailActivity" android:exported="true"/>
+        <activity android:name=".CharacterSheet" android:exported="true" />
+        <activity android:name=".CharacterSheetDetail" android:exported="true"/>
+        <activity android:name=".DateSelect" android:exported="true"/>
+        <activity android:name=".Manuales" android:exported="true"/>
     </application>
 
 </manifest>

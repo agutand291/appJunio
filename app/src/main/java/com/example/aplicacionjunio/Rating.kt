@@ -51,7 +51,6 @@ class Rating : AppCompatActivity() {
     }
 
     private fun animateRatingBar(newRating: Int) {
-        // Calculate the increment for animation duration
         val increment = 100L
 
         ratingBar.rating = 0f

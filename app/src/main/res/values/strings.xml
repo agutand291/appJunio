@@ -37,4 +37,17 @@
     <string name="atributos">Atributos</string>
     <string name="guardar_personaje">Guardar Personaje</string>
     <string name="buscar_personajes">Buscar Personajes</string>
+    <string name="str">STR</string>
+    <string name="dex">DEX</string>
+    <string name="con">CON</string>
+    <string name="inte">INT</string>
+    <string name="wis">WIS</string>
+    <string name="cha">CHA</string>
+    <string name="desconectar_la_cuenta">Desconectar la cuenta</string>
+    <string name="act_pass">Actualizar la contraseña de la centa</string>
+    <string name="act_email">Actualizar el correo de la cuenta</string>
+    <string name="act_name">Actualizar el nombre de usuario</string>
+    <string name="act_dark_mode">Activar o desactivar modo oscuro</string>
+    <string name="guardar_fecha">Guardar Fecha</string>
+    <string name="siguiente_sesion">Siguiente Sesion:</string>
 </resources>
