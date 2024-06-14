@@ -3,7 +3,9 @@ package com.example.aplicacionjunio
 import android.os.Parcel
 import android.os.Parcelable
 
+
 data class Character(
+    val id: String = "",
     val name: String = "",
     val race: String = "",
     val characterClass: String = "",
@@ -19,6 +21,7 @@ data class Character(
         parcel.readString() ?: "",
         parcel.readString() ?: "",
         parcel.readString() ?: "",
+        parcel.readString() ?: "",
         parcel.readInt(),
         parcel.readInt(),
         parcel.readInt(),
@@ -29,6 +32,7 @@ data class Character(
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
+        parcel.writeString(id)
         parcel.writeString(name)
         parcel.writeString(race)
         parcel.writeString(characterClass)

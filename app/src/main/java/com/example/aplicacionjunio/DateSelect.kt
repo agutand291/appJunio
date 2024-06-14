@@ -85,7 +85,11 @@ class DateSelect : AppCompatActivity() {
                     Toast.makeText(this, "Fecha guardada", Toast.LENGTH_SHORT).show()
                 }
                 .addOnFailureListener { e ->
-                    Toast.makeText(this, "Error al guardar la fecha: ${e.message}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this,
+                        "Error al guardar la fecha: ${e.message}",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
         }
     }

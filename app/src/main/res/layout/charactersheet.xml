@@ -10,55 +10,55 @@
         android:id="@+id/header"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/border_thin"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/border_thin">
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/charName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Character Name"
-            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:layout_gravity="center"
             android:gravity="center"
-            android:layout_gravity="center"/>
+            android:text="Character Name"
+            android:textAppearance="?attr/textAppearanceHeadline6" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
             android:gravity="center"
-            android:layout_marginTop="8dp">
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/charClass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Class"
-                android:textAppearance="?attr/textAppearanceSubtitle1"
-                android:gravity="center"/>
+                android:textAppearance="?attr/textAppearanceSubtitle1" />
 
             <TextView
                 android:id="@+id/charLevel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Level"
-                android:textAppearance="?attr/textAppearanceSubtitle1"
                 android:layout_marginStart="8dp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="Level"
+                android:textAppearance="?attr/textAppearanceSubtitle1" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/charRace"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Race"
-            android:textAppearance="?attr/textAppearanceSubtitle1"
+            android:layout_marginTop="8dp"
             android:gravity="center"
-            android:layout_marginTop="8dp"/>
+            android:text="Race"
+            android:textAppearance="?attr/textAppearanceSubtitle1" />
     </LinearLayout>
 
     <LinearLayout
@@ -68,17 +68,17 @@
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintBottom_toTopOf="@+id/lower_section"
-        app:layout_constraintEnd_toStartOf="@+id/additional_info"
+        app:layout_constraintEnd_toStartOf="@+id/objects"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.306">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            android:background="@drawable/border_thin">
+            android:background="@drawable/border_thin"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
@@ -93,15 +93,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.75"
                 android:gravity="center"
-                android:inputType="number"/>
+                android:inputType="number" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            android:background="@drawable/border_thin">
+            android:background="@drawable/border_thin"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
@@ -123,8 +123,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            android:background="@drawable/border_thin">
+            android:background="@drawable/border_thin"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
@@ -146,8 +146,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            android:background="@drawable/border_thin">
+            android:background="@drawable/border_thin"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
@@ -169,8 +169,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            android:background="@drawable/border_thin">
+            android:background="@drawable/border_thin"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
@@ -193,8 +193,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:orientation="horizontal"
-            android:background="@drawable/border_thin">
+            android:background="@drawable/border_thin"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
@@ -215,24 +215,18 @@
         </LinearLayout>
     </LinearLayout>
 
-    <ScrollView
-        android:id="@+id/additional_info"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/objects"
+        android:layout_width="207dp"
+        android:layout_height="473dp"
+        android:background="@drawable/border_thin"
         android:padding="16dp"
-        app:layout_constraintTop_toBottomOf="@id/header"
         app:layout_constraintBottom_toTopOf="@+id/lower_section"
-        app:layout_constraintStart_toEndOf="@+id/stats"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/border_thin">
+        app:layout_constraintStart_toEndOf="@+id/stats"
+        app:layout_constraintTop_toBottomOf="@id/header">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <!-- Add content here -->
-        </LinearLayout>
-    </ScrollView>
+    </androidx.recyclerview.widget.RecyclerView>
 
     <LinearLayout
         android:id="@+id/lower_section"
@@ -245,5 +239,32 @@
         app:layout_constraintStart_toStartOf="parent">
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Estadisticas"
+        app:layout_constraintBottom_toTopOf="@+id/stats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:layout_marginBottom="17dp"
+        android:text="Objetos"
+        app:layout_constraintBottom_toTopOf="@+id/objects"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

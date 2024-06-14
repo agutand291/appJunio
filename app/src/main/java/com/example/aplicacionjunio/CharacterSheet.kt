@@ -55,35 +55,40 @@ class CharacterSheet : AppCompatActivity(), ItemClickListener {
                 }
 
                 characterList.clear()
-                if (querySnapshot != null) for (document in querySnapshot.documents) try {
-                    val name = document.getString("name") ?: ""
-                    val race = document.getString("race") ?: ""
-                    val characterClass = document.getString("class") ?: ""
-                    val level = (document.getLong("level") ?: 0).toInt()
-                    val strength = (document.getLong("strength") ?: 0).toInt()
-                    val dexterity = (document.getLong("dexterity") ?: 0).toInt()
-                    val intelligence = (document.getLong("intelligence") ?: 0).toInt()
-                    val wisdom = (document.getLong("wisdom") ?: 0).toInt()
-                    val constitution = (document.getLong("constitution") ?: 0).toInt()
-                    val charisma = (document.getLong("charisma") ?: 0).toInt()
+                if (querySnapshot != null) {
+                    for (document in querySnapshot.documents) try {
+                        val documentId = document.id
+                        val name = document.getString("name") ?: ""
+                        val race = document.getString("race") ?: ""
+                        val characterClass = document.getString("class") ?: ""
+                        val level = document.getLong("level")?.toInt() ?: 0
+                        val strength = document.getLong("strength")?.toInt() ?: 0
+                        val dexterity = document.getLong("dexterity")?.toInt() ?: 0
+                        val intelligence = document.getLong("intelligence")?.toInt() ?: 0
+                        val wisdom = document.getLong("wisdom")?.toInt() ?: 0
+                        val constitution = document.getLong("constitution")?.toInt() ?: 0
+                        val charisma = document.getLong("charisma")?.toInt() ?: 0
 
-                    val character = Character(
-                        name,
-                        race,
-                        characterClass,
-                        level,
-                        strength,
-                        dexterity,
-                        intelligence,
-                        wisdom,
-                        constitution,
-                        charisma
-                    )
-                    characterList.add(character)
-                } catch (e: Exception) {
-                    Log.w(TAG, "Error al parsear", e)
-                }
-                adapter.notifyDataSetChanged()
+                        val character = Character(
+                            documentId,
+                            name,
+                            race,
+                            characterClass,
+                            level,
+                            strength,
+                            dexterity,
+                            intelligence,
+                            wisdom,
+                            constitution,
+                            charisma
+                        )
+
+                        characterList.add(character)
+                    } catch (e: Exception) {
+                        Log.w(TAG, "Error al parsear", e)
+                    }
+                    adapter.notifyDataSetChanged()
+                } else Toast.makeText(this, "No se encuentran datos", Toast.LENGTH_SHORT).show()
             }
         } else Toast.makeText(this, "Usuario no conectado", Toast.LENGTH_SHORT).show()
     }
@@ -100,16 +105,14 @@ class CharacterSheet : AppCompatActivity(), ItemClickListener {
     }
 
     override fun onEditClick(character: Character) {
-        Toast.makeText(this, "${character.name}", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, character.name, Toast.LENGTH_SHORT).show()
     }
 
     override fun onDeleteClick(character: Character) {
         AlertDialog.Builder(this)
             .setTitle("Borrar Personaje")
             .setMessage("¿Estás seguro de que quieres borrar ${character.name}?")
-            .setPositiveButton("Sí") { _, _ ->
-                deleteCharacter(character)
-            }
+            .setPositiveButton("Sí") { _, _ -> deleteCharacter(character) }
             .setNegativeButton("No", null)
             .show()
     }
@@ -118,21 +121,22 @@ class CharacterSheet : AppCompatActivity(), ItemClickListener {
         val currentUser = auth.currentUser
         if (currentUser != null) {
             val userId = currentUser.uid
-            val characterRef = db.collection("users").document(userId).collection("characters").document(character.name)
+            val characterCollectionRef = db.collection("users").document(userId).collection("characters")
 
-            Log.d(TAG, "Deleting character: ${character.name}")
-
-            characterRef.delete()
+            characterCollectionRef.document(character.id)
+                .delete()
                 .addOnSuccessListener {
                     Toast.makeText(this, "${character.name} borrado", Toast.LENGTH_SHORT).show()
                     characterList.remove(character)
                     adapter.notifyDataSetChanged()
                 }
-                .addOnFailureListener { _ ->
-                    Toast.makeText(this, "Error al borrar el personaje", Toast.LENGTH_SHORT).show()
+                .addOnFailureListener { exception ->
+                    Toast.makeText(
+                        this,
+                        "Error al borrar el personaje: $exception",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
-        } else {
-            Toast.makeText(this, "Usuario no conectado", Toast.LENGTH_SHORT).show()
-        }
+        } else Toast.makeText(this, "Usuario no conectado", Toast.LENGTH_SHORT).show()
     }
 }

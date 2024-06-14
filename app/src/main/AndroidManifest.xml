@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -30,6 +31,7 @@
         <activity android:name=".CharacterSheetDetail" android:exported="true"/>
         <activity android:name=".DateSelect" android:exported="true"/>
         <activity android:name=".Manuales" android:exported="true"/>
+        <activity android:name=".ItemView" android:exported="true"/>
     </application>
 
 </manifest>

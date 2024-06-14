@@ -1,6 +1,3 @@
 package com.example.aplicacionjunio
 
-data class ItemObj (
-    var objName:String,
-    var desc: String
-    )
+data class Item(val name: String? = "", val cost: Int = 0)

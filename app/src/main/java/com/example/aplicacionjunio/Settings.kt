@@ -34,17 +34,12 @@ class Settings : AppCompatActivity() {
             setPreferencesFromResource(R.xml.preferences, rootKey)
 
             initComponents()
-            initListeners()
             initFragments()
         }
 
         private fun initComponents() {
             auth = FirebaseAuth.getInstance()
             db = FirebaseFirestore.getInstance()
-        }
-
-        private fun initListeners() {
-
         }
 
         private fun initFragments() {

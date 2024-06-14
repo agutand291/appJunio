@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "464327523050",
+    "project_id": "clase-b5fb1",
+    "storage_bucket": "clase-b5fb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464327523050:android:988e53acda4f1b3dbeb593",
+        "android_client_info": {
+          "package_name": "com.example.aplicacionjunio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZzpSmzJQMxJ-0v7PvlQfxHC_pxmrXWU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
